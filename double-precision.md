@@ -11,7 +11,8 @@
 
 ## 为什么会出现这些情况？
 
-JavaScript中的数字（BigInt除外）不管是整数还是浮点数，都是按照 [IEEE 754双精度浮点数格式](https://en.wikipedia.org/wiki/Double-precision_floating-point_format) 存在计算机中的。  
+JavaScript中的数字（BigInt除外）不管是整数还是浮点数，都是按照 [IEEE 754双精度浮点数格式](https://en.wikipedia.org/wiki/Double-precision_floating-point_format) 存在计算机中的。
+### 存储规则
 数字会转成二进制的科学计数法（$1 * 2^{E-2013} + M$ ），存储格式如下：
 
 ![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/27d68ce0a1f740c1b4e95950c8cb06e8~tplv-k3u1fbpfcp-watermark.image?)
